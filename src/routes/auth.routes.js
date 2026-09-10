@@ -2,6 +2,8 @@ const {Router} = require('express'); /* kyuki hum api app.js mein nhi bna rhe ha
  routes folder bnaya hai toh hume firse express require krna hota hai usme bhi route require krna
   hota jo hum directly aise kr skte hai */
 
+  const authController = require("../controllers/auth.controller");
+
 const authRouter = Router();
 
 /**
@@ -10,6 +12,6 @@ const authRouter = Router();
  * @access Public
  */
 
-authRouter.post("/register",);
+authRouter.post("/register",authController.registerUserController);
 
 module.exports=authRouter;
