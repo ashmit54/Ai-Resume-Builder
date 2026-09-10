@@ -4,5 +4,12 @@ const {Router} = require('express'); /* kyuki hum api app.js mein nhi bna rhe ha
 
 const authRouter = Router();
 
+/**
+ * @route POST /api/auth/register
+ * @description Register a new user
+ * @access Public
+ */
+
+authRouter.post("/register",);
 
 module.exports=authRouter;
