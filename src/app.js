@@ -1,9 +1,11 @@
 const express =require("express");
-
+const cookieParser = require("cookie-parser");
 const app=express(); //server ka instance create kiya
 
 app.use(express.json()); //middleware use kiya express.json jisse req.body mein data read kr paaye
 /*  require all the routes here */
+
+app.use(cookieParser());
 const authRouter = require("./routes/auth.routes");
 
 
