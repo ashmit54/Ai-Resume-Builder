@@ -29,7 +29,7 @@ authRouter.post("/login",authController.loginUserController);
  * @access Public
  */
 
-authRouter.get("/logout",authController.loginUserController);
+authRouter.get("/logout",authController.logoutUserController);
 
 
 

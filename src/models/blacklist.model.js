@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const { applyTimestamps } = require('./user.model');
+
 
 const blacklistTokenSchema = new mongoose.Schema({
     token: {
