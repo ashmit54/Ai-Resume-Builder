@@ -3,7 +3,7 @@ const {Router} = require('express'); /* kyuki hum api app.js mein nhi bna rhe ha
   hota jo hum directly aise kr skte hai */
 
   const authController = require("../controllers/auth.controller");
-
+const authMiddleware =require("../middlewares/auth.middleware");
 const authRouter = Router();
 
 /**
@@ -31,6 +31,12 @@ authRouter.post("/login",authController.loginUserController);
 
 authRouter.get("/logout",authController.logoutUserController);
 
+/**
+ * @route GET /api/auth/get-me
+ * @description get the current logged in user details
+ * @access private
+ */
 
+authRouter.get("/get-me",authMiddleware.authUser,authController.getMeController);
 
 module.exports=authRouter;
