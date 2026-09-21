@@ -1,3 +1,7 @@
+@use "./style/button.scss";
+
+
+
 * {
     margin: 0%;
     padding: 0%;
@@ -9,4 +13,5 @@ body,
 #root {
     width: 100%;
     background-color: #161616;
+    color: whitesmoke;
 }
