@@ -143,23 +143,21 @@ async function getMeController(req,res) {
     
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-module.exports={
+module.exports = {
     registerUserController,
     loginUserController,
     logoutUserController,
     getMeController
-    
-};
+}
+
+
+
+
+
+
+
+
+
+
+
+
