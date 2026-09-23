@@ -92,6 +92,7 @@ async function loginUserController(req,res) {
         process.env.JWT_SECRET ,
         { expiresIn:"1d" }
      )
+     const isProduction = process.env.NODE_ENV === "production";
 
     //  res.cookie("token",token);
       res.cookie("token", token, {
